@@ -65,7 +65,7 @@ def found():
         
         submitted = True
 
-    return render_template('report-found.html', submitted=submitted)
+    return render_template('report_found.html', submitted=submitted)
 
 @app.route('/browse')
 def browse():
