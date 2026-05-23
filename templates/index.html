@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CampusLostFound</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="search">
+             <span class="search-icon">🔍</span>CampusLostFound
+        </div>
+        <div class="all-links">
+            <a href="{{url_for('home')}}">Home</a>
+            <a href="{{url_for('lost')}}">Lost</a>
+            <a href="{{url_for('found')}}">Found</a>
+            <a href="{{url_for('browse')}}">Browse</a>
+            <a href="{{url_for('contact')}}">Contact</a>
+        </div>
+    </nav>
+
+    <section class="sec">
+    <div class="text">
+        <h2>Lost something on campus?</h2>
+        <p>Report lost items or help return what you found</p>
+        <div class="buttons">
+            <a href="#" class="button1">I lost something</a>
+            <a href="#" class="button2">I found something</a>
+        </div>
+    </div>
+</section>
+<section class="ss">
+<div class="container">
+    <div class="box">
+        <h2>12</h2>
+        <p>Items lost</p>
+    </div>
+    <div class="box">
+        <h2>8</h2>
+        <p>Items found</p>
+    </div>
+    <div class="box">
+        <h2>5</h2>
+        <p>Reunited</p>
+    </div>
+</div>
+</section>
+
+<section class="recent">
+<div class="container">
+    <h3 class="heading">Recent Items</h3>
+    <div class="item-container">
+       <div class="item-box">
+          <span class="tag lost">Lost</span>
+          <h4>Brown Wallet</h4>
+          <p>Library . 2 days ago</p>
+        </div>  
+        <div class="item-box">
+          <span class="tag found">Found</span>
+          <h4>Water Bottle</h4>
+          <p>Canteen . Today</p>
+        </div> 
+        <div class="item-box">
+          <span class="tag lost">Lost</span>
+          <h4>Calculator</h4>
+          <p>Lab 2 . 1 day ago</p>
+    </div>
+</div>
+</section>   
+      
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
