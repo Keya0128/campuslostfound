@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CampusLostFound</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="search">
+             <span class="search-icon">🔍</span>CampusLostFound
+        </div>
+        <div class="all-links">
+            <a href="{{url_for('home')}}">Home</a>
+            <a href="{{url_for('lost')}}">Lost</a>
+            <a href="{{url_for('found')}}">Found</a>
+            <a href="{{url_for('browse')}}">Browse</a>
+            <a href="{{url_for('contact')}}">Contact</a>
+        </div>
+    </nav>
+
+    <div class="contact-page-wrapper">
+        <h2 class="contact-heading">Claim an item or get help</h2>
+        
+        <p class="contact-subtext">Found your lost item in the list? Fill this form to contact the person who reported it. Your details will be sent to them.</p>
+
+        <!-- Hidden Radio Buttons for Tabs -->
+        <input type="radio" name="form-tab" id="claim" class="tab-input" checked>
+        <input type="radio" name="form-tab" id="general" class="tab-input">
+
+        <!-- Tabs -->
+        <div class="contact-tabs">
+            <label for="claim" class="contact-tab">Claim item</label>
+            <label for="general" class="contact-tab">General enquiry</label>
+        </div>
+
+        <!-- Claim Form -->
+        <div class="contact-form-card claim-form">
+            <div class="form-field">
+                <label>Item you are claiming</label>
+                <input type="text" placeholder="e.g. Black Wallet (ID #12)">
+            </div>
+            <div class="form-field-row">
+                <div class="form-field">
+                    <label>Your name</label>
+                    <input type="text" placeholder="Full name">
+                </div>
+                <div class="form-field">
+                    <label>Roll number</label>
+                    <input type="number" placeholder="Roll no.">
+                </div>
+            </div>
+             <div class="form-field">
+                    <label>Proof of ownership</label>
+                    <textarea placeholder="Describe something only the owner would know" rows="4"></textarea>
+                </div>
+                <div class="form-field">
+                    <label>Your contact number</label>
+                    <input type="tel" placeholder="Mobile no.">
+                </div>
+                <div class="form-field">
+                    <button type="submit" class="submit-btn">Send Claim Request</button>
+                </div>
+        </div>
+
+        <!-- General Form -->
+        <div class="contact-form-card general-form">
+            <div class="form-field">
+                <label>Your name</label>
+                <input type="text" placeholder="Full name">
+            </div>
+            <div class="form-field">
+                <label>Email</label>
+                <input type="email" placeholder="rahulk123@gmail.com">
+            </div>
+            <div class="form-field">
+                <label>Message</label>
+                <textarea placeholder="Your message" rows="4"></textarea>
+            </div>
+             <div class="form-field">
+                    <button type="submit" class="submit-btn">Send Enquiry</button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
